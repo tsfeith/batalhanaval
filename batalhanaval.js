@@ -72,19 +72,25 @@ while (foiAfundado === false) {
         
             //bloco 'if' que verifica se a jogada acertou numa das partes do navio...
 		    if (jogada == parte1 || jogada == parte2 || jogada == parte3) {
-
-			    alert("Acertaste em mais uma parte!");
-
+			    
 			    atingidas += 1;
-            
-                //se o jogador já tiver acertado em 3 partes
-                //o navio afunda e o jogo acaba
-			    if (atingidas == 3) {
+			    
+			    if (atingidas == 1) {
+				    
+				    alert("Acertaste numa parte);
+				
+			    } else if (atingidas == 2) {
 
-				    foiAfundado = true;
+			    	alert("Acertaste em mais uma parte!");
+			     
+			     //se o jogador já tiver acertado em 3 partes
+                             //o navio afunda e o jogo acaba	    
+			    } else if (atingidas == 3) {
 
-				    alert("Navio totalmente afundado!");
+				 foiAfundado = true;
 
+				 alert("Navio totalmente afundado!");
+			    
 			    }
         
             //...se não o jogo avisa o utilizador de que falhou o navio
