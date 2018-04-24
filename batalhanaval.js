@@ -102,6 +102,6 @@ while (foiAfundado === false) {
 //no final, calcula-se a pontaria do jogador, 
 //fazendo a razão entre disparos realizados e disparos certeiros (3)
 var estatistica = "Foi preciso um total de " + totalJogadas + " jogadas para afundar o navio, " + 
-                          "o que quer dizer que a tua pontaria foi de " + (3/totalJogadas);
+                          "o que quer dizer que a tua pontaria foi de " + ((3/totalJogadas)*100) + "%.";
 
 alert(estatistica);
